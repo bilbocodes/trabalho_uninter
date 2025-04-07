@@ -51,10 +51,10 @@
     --texto: #FFFFFF;
     --bg-principal: #000000;
     --texto-secundario: #FFFFFF;
-    --destaque: #FFFF00; /* Amarelo de alto contraste */
-    --destaque-hover: #FFC107;
+    --destaque: #ff0000; /* Amarelo de alto contraste */
+    --destaque-hover: #ff0707;
     --bg-card: #0D0D0D;
-    --bg-secundario: #0D0D0D;
+    --bg-secundario: #3f3939;
     --input-bg: #000000;
     --input-texto: #FFFFFF;
     --input-borda: #FFFFFF;
