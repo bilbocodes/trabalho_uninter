@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal com projetos e informações de contato">
+    
+    <title>Meu Portfólio | Desenvolvedor Web</title>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/src/styles/cores.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/acessibilidade.css">
+    <link rel="stylesheet" href="/src/styles/responsividade.css">
+    
+</head>
+<body class="tema-escuro">
+    <!-- Link para pular navegação - acessibilidade para usuários de teclado -->
+    <a href="#main-content" class="skip-to-content">Pular para o conteúdo principal</a>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Navegação principal">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">LK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio" aria-current="page">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <!-- Seção de Banner -->
+        <section id="inicio" class="hero-section" aria-label="Seção de introdução">
+            <div class="hero-background">
+                <div class="hero-bg-circle"></div>
+                <div class="hero-bg-blob hero-bg-blob-1"></div>
+                <div class="hero-bg-blob hero-bg-blob-2"></div>
+            </div>
+            
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="hero-greeting">
+                                <span class="greeting-line"></span>
+                                <span class="greeting-text">Bem-vindo ao meu portfólio</span>
+                            </div>
+                            <h1 class="hero-title">Olá, eu sou <span class="destaque">Luka Andrade</span></h1>
+                            <h2 class="hero-subtitle">Desenvolvedor Front-End</h2>
+                            <p class="hero-description">Criando experiências digitais impactantes através de código limpo e design intuitivo.</p>
+                            
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">1</span>
+                                    <span class="stat-text">Ano de Experiência</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">10</span>
+                                    <span class="stat-text">Projetos Completos</span>
+                                </div>
+                            </div>
+                            
+                            <div class="hero-buttons">
+                                <a href="#contato" class="btn btn-primario me-3 mb-2 mb-md-0">
+                                    <i class="fas fa-paper-plane"></i> Entre em Contato
+                                </a>
+                                <a href="#projetos" class="btn btn-secundario">
+                                    <i class="fas fa-code"></i> Ver Projetos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="hero-image-container">
+                            <!-- Utilizamos uma forma mais atraente para o avatar -->
+                            <div class="hero-avatar">
+                                <div class="avatar-circle">
+                                    <div class="avatar-inner">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="avatar-orbit">
+                                        <div class="orbit-icon orbit-icon-1"><i class="fab fa-html5"></i></div>
+                                        <div class="orbit-icon orbit-icon-2"><i class="fab fa-css3-alt"></i></div>
+                                        <div class="orbit-icon orbit-icon-3"><i class="fab fa-js"></i></div>
+                                        <div class="orbit-icon orbit-icon-4"><i class="fab fa-react"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#sobre" aria-label="Rolar para baixo para seção sobre mim">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="wave-divider">
+                <img src="static/svg/wave.svg" alt="" role="presentation" class="w-100">
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section-padding" aria-label="Sobre mim">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2>Sobre Mim</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="about-image">
+                            <div class="sobre-placeholder" aria-hidden="true">
+                                <i class="fas fa-code fa-10x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-content">
+                            <h3>Quem sou eu?</h3>
+                            <p>Sou um desenvolvedor web apaixonado por criar experiências digitais atraentes e funcionais. Com formação em andamento em Análise e Desenvolvimento de Sistemas e experiência em desenvolvimento front-end, meu objetivo é combinar habilidades técnicas com design intuitivo e acessível.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                        <p>luka.andrade88@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                        <p>Minas Gerias, Brasil</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                        <p>+55 (31) 99626-8759</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                        <p>Análise e Desenvolvimento de Sistemas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primario">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projetos" class="section-padding bg-light" aria-label="Meus projetos">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2>Meus Projetos</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="projeto-grid">
+                    <!-- Projeto 1 -->
+                    <article class="projeto-card">
+                        <div class="projeto-imagem">
+                            <div class="projeto-placeholder" aria-hidden="true">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Site Responsivo</h3>
+                            <p>Design e desenvolvimento de um site responsivo com HTML5, CSS3 e JavaScript.</p>
+                            <div class="projeto-tecnologias">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="projeto-links">
+                                <a href="#" class="btn btn-sm btn-outline-primario"><i class="fas fa-eye" aria-hidden="true"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secundario"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto 2 -->
+                    <article class="projeto-card">
+                        <div class="projeto-imagem">
+                            <div class="projeto-placeholder" aria-hidden="true">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>E-commerce</h3>
+                            <p>Plataforma de e-commerce com sistema de carrinho e pagamento integrado.</p>
+                            <div class="projeto-tecnologias">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="projeto-links">
+                                <a href="#" class="btn btn-sm btn-outline-primario"><i class="fas fa-eye" aria-hidden="true"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secundario"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto 3 -->
+                    <article class="projeto-card">
+                        <div class="projeto-imagem">
+                            <div class="projeto-placeholder" aria-hidden="true">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>App Mobile</h3>
+                            <p>Aplicativo móvel para gestão de tarefas diárias com notificações.</p>
+                            <div class="projeto-tecnologias">
+                                <span>React Native</span>
+                                <span>Redux</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="projeto-links">
+                                <a href="#" class="btn btn-sm btn-outline-primario"><i class="fas fa-eye" aria-hidden="true"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secundario"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto 4 -->
+                    <article class="projeto-card">
+                        <div class="projeto-imagem">
+                            <div class="projeto-placeholder" aria-hidden="true">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Dashboard Analítico</h3>
+                            <p>Dashboard interativo para visualização de dados empresariais.</p>
+                            <div class="projeto-tecnologias">
+                                <span>Vue.js</span>
+                                <span>D3.js</span>
+                                <span>Express</span>
+                            </div>
+                            <div class="projeto-links">
+                                <a href="#" class="btn btn-sm btn-outline-primario"><i class="fas fa-eye" aria-hidden="true"></i> Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secundario"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Habilidades -->
+        <section id="habilidades" class="section-padding" aria-label="Minhas habilidades técnicas">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2>Minhas Habilidades</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h3 class="mb-4 text-center">Tecnologias</h3>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>HTML5 & CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em HTML5 e CSS3: 95%">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em JavaScript: 85%">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em React: 80%">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em Node.js: 75%">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>Vue.js</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em Vue.js: 70%">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="habilidade-item">
+                            <div class="habilidade-info">
+                                <span>Python</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress" aria-label="Habilidade em Java: 65%">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="section-padding bg-light" aria-label="Informações de contato">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2>Entre em Contato</h2>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="contato-info">
+                            <h3>Vamos conversar?</h3>
+                            <p>Preencha o formulário ao lado para entrar em contato comigo. Estou disponível para projetos freelance, oportunidades de trabalho ou apenas para trocar ideias.</p>
+                            
+                            <div class="contato-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>luka.andrade@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contato-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <p>+55 (31) 99626-8759</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contato-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <p>Minas Gerais, Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-icons mt-4">
+                                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contato-form">
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="nome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="nome" name="nome" required placeholder="Seu nome">
+                                            <div id="nome-error" class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" name="email" required placeholder="Seu email">
+                                            <div id="email-error" class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-group">
+                                        <label for="assunto" class="form-label">Assunto</label>
+                                        <input type="text" class="form-control" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+                                        <div id="assunto-error" class="error-message"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-group">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem"></textarea>
+                                        <div id="mensagem-error" class="error-message"></div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" id="submit-btn" class="btn btn-primario">
+                                        <span id="btn-text">Enviar Mensagem</span>
+                                        <span id="btn-loading" class="d-none">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container py-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="footer-titulo">Vamos Trabalhar Juntos</h3>
+                    <p>Se interessou pelo meu trabalho? Entre em contato!</p>
+                </div>
+                <div class="col-12">
+                    <div class="social-icons">
+                        <a href="https://github.com/bilbocodes" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/luka-andrade/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="mailto:luka.andrade88@email.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

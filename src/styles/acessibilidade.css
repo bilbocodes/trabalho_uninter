@@ -1,0 +1,94 @@
+/**
+ * Estilos de acessibilidade para o portfólio pessoal
+ * Autor: Seu Nome
+ * Data: 2023
+ */
+
+/* Elementos visualmente ocultos, mas acessíveis para leitores de tela */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Link para pular navegação (acessibilidade para usuários de teclado) */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px 15px;
+    background-color: var(--destaque);
+    color: white;
+    z-index: 9999;
+    transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Alto contraste para texto em relação a fundos */
+.high-contrast {
+    --texto: #000;
+    --bg-principal: #fff;
+    --texto-secundario: #222;
+    --destaque: #000;
+    --destaque-hover: #333;
+}
+
+/* Configurações para melhor legibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Melhoria no foco de elementos interativos */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--destaque);
+    outline-offset: 3px;
+}
+
+/* Aumento de texto base para melhor legibilidade */
+.larger-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Suporte para Tema Escuro baseado na preferência do sistema */
+@media (prefers-color-scheme: dark) {
+    .sistema-tema-escuro {
+        --bg-principal: #1a1a1a;
+        --bg-secundario: #252525;
+        --bg-card: #2a2a2a;
+        --bg-nav: rgba(26, 26, 26, 0.95);
+        --bg-nav-scroll: rgba(26, 26, 26, 0.98);
+        --bg-footer: #181818;
+        
+        --texto: #e6e6e6;
+        --texto-secundario: #adb5bd;
+        --titulos: #f8f9fa;
+        --texto-nav: #dee2e6;
+        --texto-footer: #dee2e6;
+        --texto-footer-titulo: #f8f9fa;
+        
+        --borda: #444;
+        --borda-footer: #555;
+        
+        --input-bg: #333;
+        --input-bg-focus: #3a3a3a;
+    }
+}

@@ -1,0 +1,70 @@
+/**
+ * Esquemas de cores para o portfólio pessoal
+ * Autor: Seu Nome
+ * Data: 2023
+ */
+
+ :root {
+    /* Variáveis de cores base */
+    --cor-principal: #64a9dd;
+    --cor-secundaria: #95c3eb;
+    --cor-terciaria: #d1e1ff;
+    --cor-destaque: #3498db;
+    
+    /* Cores neutras */
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza-claro: #f8f9fa;
+    --cinza-medio: #6c757d;
+    --cinza-escuro: #343a40;
+}
+
+/* Tema Escuro */
+.tema-escuro {
+    /* Cores de fundo */
+    --bg-principal: #121212;
+    --bg-secundario: #1e1e1e;
+    --bg-card: #282828;
+    --bg-nav: rgba(18, 18, 18, 0.95);
+    --bg-nav-scroll: rgba(18, 18, 18, 0.98);
+    --bg-footer: #1a1a1a;
+    
+    /* Cores de texto */
+    --texto: #e0e0e0;
+    --texto-secundario: #b0b0b0;
+    --titulos: #f0f0f0;
+    --texto-nav: #e0e0e0;
+    --texto-footer: #c0c0c0;
+    --texto-footer-titulo: #f0f0f0;
+    
+    /* Cores de destaque */
+    --destaque: #5c94c5;
+    --destaque-hover: #4b7cb1;
+    --destaque-secundario: #4e7ca6;
+    
+    /* Cores para botões */
+    --btn-primario-bg: var(--destaque);
+    --btn-primario-texto: var(--branco);
+    --btn-secundario-bg: transparent;
+    --btn-secundario-texto: var(--destaque);
+    --btn-secundario-borda: var(--destaque);
+    
+    /* Bordas e sombras */
+    --borda: #444;
+    --borda-footer: #333;
+    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Inputs */
+    --input-bg: #ffffff;
+    --input-bg-focus: #f8f9fa;
+    --input-borda: #555;
+    --input-texto: #333;
+    
+    /* Elementos específicos */
+    --progress-bar-bg: #333;
+    --progress-bar-fill: var(--destaque);
+    
+    /* Variáveis RGB para uso em rgba() */
+    --destaque-rgb: 92, 148, 197;
+    --destaque-secundario-rgb: 78, 124, 166;
+}
