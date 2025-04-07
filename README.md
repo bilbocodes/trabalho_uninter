@@ -1,10 +1,18 @@
 # Portfólio Profissional - Luka Andrade
 
-![Licença](https://img.shields.io/badge/license-MIT-blue) ![Versão](https://img.shields.io/badge/version-1.0.0-green) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Versão](https://img.shields.io/badge/version-1.0.0-green) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
 ## 📋 Descrição
 
 Este é um site de portfólio profissional desenvolvido com HTML5, CSS3 e JavaScript, focado em acessibilidade e design responsivo. O projeto foi construído para apresentar minhas habilidades como desenvolvedor front-end, projetos e informações de contato.
+
+## 🔗 Acesso Online
+
+O projeto está disponível online e pode ser acessado através do seguinte link:
+
+**[https://portfolio-luka-andrade.vercel.app](https://portfolio-luka-andrade.vercel.app)**
+
+O site é hospedado na plataforma Vercel, garantindo alta disponibilidade e carregamento rápido.
 
 ## 🚀 Características
 
@@ -93,10 +101,6 @@ Para personalizar este portfólio:
 - [ ] Modo de tema claro/escuro com toggle
 - [ ] Mais opções de acessibilidade
 - [ ] Multi-idioma (PT-BR/EN)
-
-## 📜 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ## 🤝 Créditos
 
