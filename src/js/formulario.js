@@ -30,6 +30,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicionar evento de submit
     if (contactForm) contactForm.addEventListener('submit', handleSubmit);
     
+    // Adicionar eventos para melhorar a experiência dos campos de formulário
+    const formControls = document.querySelectorAll('.form-control');
+    
+    // Destaque extra para campos ativos
+    if (formControls) {
+        formControls.forEach(control => {
+            // Aplicar classe especial quando o campo está ativo
+            control.addEventListener('focus', function() {
+                this.classList.add('form-control-active');
+                
+                // Adicionar classe no container do formulário para efeito visual
+                const formGroup = this.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.add('form-group-active');
+                }
+            });
+            
+            // Remover destaque quando o campo perde foco
+            control.addEventListener('blur', function() {
+                this.classList.remove('form-control-active');
+                
+                // Remover classe no container
+                const formGroup = this.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.remove('form-group-active');
+                }
+            });
+        });
+    }
+    
     /**
      * Exibe mensagem de erro para um campo específico
      * @param {HTMLElement} inputElement - Elemento de input

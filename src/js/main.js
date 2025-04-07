@@ -109,6 +109,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Aplicar classe do tema escolhido
         document.body.classList.add(tema);
+
+        // Anunciar mudança de tema para leitores de tela
+        anunciarParaLeitoresDeTelaEscolhaTema(`Tema ${tema.replace('tema-', '')} aplicado.`);
     }
     
     /**

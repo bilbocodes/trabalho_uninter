@@ -1,70 +1,71 @@
 /**
  * Esquemas de cores para o portfólio pessoal
- * Autor: Seu Nome
+ * Autor: Luka Andrade
  * Data: 2023
  */
 
- :root {
-    /* Variáveis de cores base */
-    --cor-principal: #64a9dd;
-    --cor-secundaria: #95c3eb;
-    --cor-terciaria: #d1e1ff;
-    --cor-destaque: #3498db;
+:root {
+    /* Variáveis de cores base com melhor contraste */
+    --cor-principal: #4CAF93; /* Verde vibrante */
+    --cor-secundaria: #FFB74D; /* Laranja suave */
+    --cor-terciaria: #FFD54F; /* Amarelo pastel */
+    --cor-destaque: #FF5722; /* Coral mais intenso para melhor contraste */
     
     /* Cores neutras */
-    --branco: #ffffff;
+    --branco: #FFFFFF;
     --preto: #000000;
-    --cinza-claro: #f8f9fa;
-    --cinza-medio: #6c757d;
-    --cinza-escuro: #343a40;
+    --cinza-claro: #F5F5F5;
+    --cinza-medio: #9E9E9E;
+    --cinza-escuro: #424242;
 }
 
-/* Tema Escuro */
+/* Tema Escuro com melhor contraste para acessibilidade */
 .tema-escuro {
-    /* Cores de fundo */
+    /* Cores de fundo com contraste adequado */
     --bg-principal: #121212;
-    --bg-secundario: #1e1e1e;
-    --bg-card: #282828;
-    --bg-nav: rgba(18, 18, 18, 0.95);
+    --bg-secundario: #1E1E1E;
+    --bg-card: #2C2C2C;
+    --bg-nav: rgba(18, 18, 18, 0.97); /* Mais opaco para melhor leitura */
     --bg-nav-scroll: rgba(18, 18, 18, 0.98);
-    --bg-footer: #1a1a1a;
+    --bg-footer: #1A1A1A;
     
-    /* Cores de texto */
-    --texto: #e0e0e0;
-    --texto-secundario: #b0b0b0;
-    --titulos: #f0f0f0;
-    --texto-nav: #e0e0e0;
-    --texto-footer: #c0c0c0;
-    --texto-footer-titulo: #f0f0f0;
+    /* Cores de texto com alto contraste */
+    --texto: #F0F0F0; /* Mais claro para melhor contraste */
+    --texto-secundario: #BDBDBD; /* Mais claro que antes */
+    --titulos: #FFFFFF; /* Branco puro para melhor leitura */
+    --texto-nav: #F0F0F0;
+    --texto-footer: #D0D0D0;
+    --texto-footer-titulo: #FFFFFF;
     
-    /* Cores de destaque */
-    --destaque: #5c94c5;
-    --destaque-hover: #4b7cb1;
-    --destaque-secundario: #4e7ca6;
+    /* Cores de destaque com contraste adequado (4.5:1 ou superior) */
+    --destaque: #FF5722; /* Coral intenso - testado para acessibilidade */
+    --destaque-hover: #FF7043;
+    --destaque-secundario: #FF8A65;
     
     /* Cores para botões */
     --btn-primario-bg: var(--destaque);
-    --btn-primario-texto: var(--branco);
+    --btn-primario-texto: #FFFFFF;
     --btn-secundario-bg: transparent;
     --btn-secundario-texto: var(--destaque);
     --btn-secundario-borda: var(--destaque);
     
-    /* Bordas e sombras */
+    /* Bordas e sombras mais suaves */
     --borda: #444;
     --borda-footer: #333;
-    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.3);
     
-    /* Inputs */
-    --input-bg: #ffffff;
-    --input-bg-focus: #f8f9fa;
+    /* Inputs com melhor contraste - corrigido para maior legibilidade */
+    --input-bg: #333333; /* Fundo mais escuro que o card */
+    --input-bg-focus: #3D3D3D; /* Mais claro quando em foco */
     --input-borda: #555;
-    --input-texto: #333;
+    --input-texto: #FFFFFF; /* Branco puro para máximo contraste */
+    --input-placeholder: #999999; /* Placeholder mais visível que antes */
     
     /* Elementos específicos */
     --progress-bar-bg: #333;
     --progress-bar-fill: var(--destaque);
     
     /* Variáveis RGB para uso em rgba() */
-    --destaque-rgb: 92, 148, 197;
-    --destaque-secundario-rgb: 78, 124, 166;
+    --destaque-rgb: 255, 87, 34; /* FF5722 */
+    --destaque-secundario-rgb: 255, 138, 101;
 }

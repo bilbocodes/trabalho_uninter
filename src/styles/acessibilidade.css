@@ -1,6 +1,6 @@
 /**
  * Estilos de acessibilidade para o portfólio pessoal
- * Autor: Seu Nome
+ * Autor: Luka Andrade
  * Data: 2023
  */
 
@@ -17,32 +17,74 @@
     border: 0;
 }
 
-/* Link para pular navegação (acessibilidade para usuários de teclado) */
+/* Link para pular navegação aprimorado */
 .skip-to-content {
     position: absolute;
-    top: -40px;
-    left: 0;
-    padding: 8px 15px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
     background-color: var(--destaque);
     color: white;
     z-index: 9999;
     transition: top 0.3s;
+    border-radius: 0 0 8px 8px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .skip-to-content:focus {
     top: 0;
+    outline: 3px solid white;
 }
 
-/* Alto contraste para texto em relação a fundos */
+/* Classe para texto com espaçamento aprimorado (para pessoas com dislexia) */
+.improved-reading {
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 1.8;
+}
+
+/* Alto contraste para usuários com deficiência visual */
 .high-contrast {
-    --texto: #000;
-    --bg-principal: #fff;
-    --texto-secundario: #222;
-    --destaque: #000;
-    --destaque-hover: #333;
+    --texto: #FFFFFF;
+    --bg-principal: #000000;
+    --texto-secundario: #FFFFFF;
+    --destaque: #FFFF00; /* Amarelo de alto contraste */
+    --destaque-hover: #FFC107;
+    --bg-card: #0D0D0D;
+    --bg-secundario: #0D0D0D;
+    --input-bg: #000000;
+    --input-texto: #FFFFFF;
+    --input-borda: #FFFFFF;
 }
 
-/* Configurações para melhor legibilidade */
+/* Interface para usuários com baixa visão */
+.larger-text {
+    font-size: 1.2rem !important;
+    line-height: 1.8 !important;
+}
+
+.larger-text h1 {
+    font-size: 3rem !important;
+}
+
+.larger-text h2 {
+    font-size: 2.5rem !important;
+}
+
+.larger-text h3 {
+    font-size: 2rem !important;
+}
+
+.larger-text .btn, 
+.larger-text .form-control {
+    font-size: 1.2rem !important;
+    padding: 1rem 1.5rem !important;
+}
+
+/* Redução de movimento para usuários com sensibilidade a movimentos */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -50,22 +92,67 @@
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+    
+    .hero-bg-blob, 
+    .avatar-orbit, 
+    .orbit-icon, 
+    .wheel, 
+    .arrow span {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .btn:hover, 
+    .projeto-card:hover, 
+    .social-icons a:hover {
+        transform: none !important;
+    }
 }
 
-/* Melhoria no foco de elementos interativos */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 2px solid var(--destaque);
+/* Foco melhorado para navegação por teclado */
+:focus {
+    outline: 3px solid var(--destaque);
     outline-offset: 3px;
 }
 
-/* Aumento de texto base para melhor legibilidade */
-.larger-text {
-    font-size: 1.1em;
-    line-height: 1.6;
+.focus-visible-only:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.focus-visible-only:focus-visible {
+    outline: 3px solid var(--destaque);
+    outline-offset: 3px;
+}
+
+/* Botão para alternar tamanho de texto */
+.accessibility-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accessibility-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--destaque);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.accessibility-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
 }
 
 /* Suporte para Tema Escuro baseado na preferência do sistema */

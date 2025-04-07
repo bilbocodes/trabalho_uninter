@@ -1,6 +1,6 @@
 /**
  * Estilos principais para o portfólio pessoal
- * Autor: Seu Nome
+ * Autor: Luka Andrade
  * Data: 2023
  */
 
@@ -15,6 +15,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    font-size: 16px; /* Base para cálculos em rem */
 }
 
 body {
@@ -26,27 +27,41 @@ body {
     overflow-x: hidden;
 }
 
+/* Cabeçalhos com espaçamento melhorado para leitura */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     color: var(--titulos);
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem; /* Mais espaço após títulos */
     line-height: 1.3;
+    letter-spacing: 0.5px; /* Melhor legibilidade */
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem; /* Espaçamento entre parágrafos */
     color: var(--texto);
+    font-size: 1.05rem; /* Texto ligeiramente maior para leitura */
+    line-height: 1.7; /* Maior para melhor leitura */
 }
 
+/* Links mais acessíveis */
 a {
     color: var(--destaque);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-weight: 500; /* Texto dos links um pouco mais visível */
 }
 
-a:hover {
+a:hover, a:focus {
     color: var(--destaque-hover);
+    text-decoration: underline; /* Melhora acessibilidade */
+    transform: scale(1.02);
+}
+
+/* Foco claro para navegação por teclado */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 3px solid var(--destaque);
+    outline-offset: 3px;
 }
 
 img {
@@ -224,14 +239,15 @@ section {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    color: var(--titulos);
 }
 
 .hero-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--texto-secundario);
@@ -253,40 +269,53 @@ section {
     flex-wrap: wrap;
 }
 
+/* Botões com maior acessibilidade */
 .btn {
-    padding: 0.8rem 1.5rem;
-    font-weight: 500;
+    padding: 0.9rem 1.5rem; /* Botões maiores são mais acessíveis */
+    font-weight: 600;
     border-radius: 30px;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    letter-spacing: 0.5px; /* Melhor legibilidade */
+    text-align: center;
 }
 
+.btn:focus {
+    box-shadow: 0 0 0 3px rgba(var(--destaque-rgb), 0.5);
+    outline: none;
+}
+
+/* Botões com cores mais acessíveis */
 .btn-primario {
     background-color: var(--btn-primario-bg);
     color: var(--btn-primario-texto);
     border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(var(--destaque-rgb), 0.25);
+    font-weight: 600;
 }
 
 .btn-primario:hover {
     background-color: var(--destaque-hover);
     color: var(--branco);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(var(--destaque-rgb), 0.3);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(var(--destaque-rgb), 0.4);
+    text-decoration: none; /* Manter consistência visual */
 }
 
 .btn-secundario {
     background-color: var(--btn-secundario-bg);
     color: var(--btn-secundario-texto);
     border: 2px solid var(--btn-secundario-borda);
+    font-weight: 600;
 }
 
 .btn-secundario:hover {
     background-color: var(--destaque);
     color: var(--branco);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(var(--destaque-rgb), 0.3);
 }
 
@@ -496,12 +525,14 @@ section {
     margin-bottom: 2.5rem;
 }
 
+/* Ajuste na seção de títulos para melhor visibilidade */
 .section-title h2 {
     font-size: 2.2rem;
     font-weight: 700;
     position: relative;
     display: inline-block;
     margin-bottom: 0.5rem;
+    color: var(--destaque);
 }
 
 .underline {
@@ -510,6 +541,7 @@ section {
     background-color: var(--destaque);
     margin: 0 auto;
     border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(var(--destaque-rgb), 0.2);
 }
 
 .about-image {
@@ -531,6 +563,10 @@ section {
     opacity: 0.7;
 }
 
+.about-content {
+    text-align: left; /* Alinhamento à esquerda */
+}
+
 .about-content h3 {
     margin-bottom: 1.5rem;
     position: relative;
@@ -541,11 +577,32 @@ section {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 0; /* Alinhado à esquerda */
     width: 50px;
     height: 3px;
     background-color: var(--destaque);
     border-radius: 1.5px;
+}
+
+/* Botão na seção sobre */
+.about-content .mt-4 {
+    display: block;
+}
+
+/* Botão na seção sobre - centralizado */
+.about-content .mt-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem !important;
+}
+
+/* Ajuste em móveis para o botão centralizado */
+@media (max-width: 768px) {
+    .about-content .mt-4 .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 .info-item {
@@ -562,6 +619,10 @@ section {
     text-align: center;
 }
 
+.info-item p {
+    margin-bottom: 0;
+}
+
 /* Seção Projetos
 -------------------------------------------------- */
 .projeto-grid {
@@ -570,6 +631,7 @@ section {
     gap: 30px;
 }
 
+/* Seção de projetos com melhor visualização */
 .projeto-card {
     background-color: var(--bg-card);
     border-radius: 15px;
@@ -578,11 +640,13 @@ section {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    border: 1px solid transparent;
 }
 
-.projeto-card:hover {
+.projeto-card:hover, .projeto-card:focus-within {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--destaque);
 }
 
 .projeto-imagem {
@@ -596,7 +660,7 @@ section {
 
 .projeto-placeholder {
     font-size: 4rem;
-    color: var(--destaque);
+    color: var (--destaque);
     opacity: 0.7;
 }
 
@@ -638,25 +702,33 @@ section {
     justify-content: space-between;
 }
 
+/* Ajustes para os botões de projeto */
 .btn-outline-primario {
     color: var(--destaque);
-    border-color: var(--destaque);
+    border: 2px solid var(--destaque);
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .btn-outline-primario:hover {
     background-color: var(--destaque);
     color: var(--branco);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(var(--destaque-rgb), 0.3);
 }
 
 .btn-outline-secundario {
     color: var(--texto-secundario);
-    border-color: var(--borda);
+    border: 2px solid var(--borda);
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .btn-outline-secundario:hover {
     background-color: var(--bg-secundario);
-    color: var(--destaque);
+    color: var (--destaque);
     border-color: var(--destaque);
+    transform: translateY(-2px);
 }
 
 /* Seção Habilidades
@@ -671,18 +743,41 @@ section {
     margin-bottom: 0.5rem;
 }
 
+/* Melhorias para barras de progresso */
 .progress {
-    height: 10px;
-    border-radius: 5px;
+    height: 12px; /* Barras mais altas para melhor visibilidade */
+    border-radius: 6px;
     background-color: var(--progress-bar-bg);
     overflow: hidden;
+    margin-bottom: 1.25rem; /* Mais espaço entre barras */
 }
 
 .progress-bar {
     background-color: var(--progress-bar-fill);
-    border-radius: 5px;
+    border-radius: 6px;
     transition: width 1.5s ease-in-out;
     width: 0;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0.1) 25%, 
+        rgba(255,255,255,0.2) 50%, 
+        rgba(255,255,255,0.1) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
 /* Seção Contato
@@ -726,6 +821,7 @@ section {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .social-icons a {
@@ -746,6 +842,7 @@ section {
     transform: translateY(-3px);
 }
 
+/* Formulários mais acessíveis e com melhor contraste */
 .contato-form {
     padding: 2rem;
     background-color: var(--bg-card);
@@ -754,34 +851,58 @@ section {
 }
 
 .form-control {
-    padding: 0.8rem 1rem;
-    border: 1px solid var(--input-borda);
+    padding: 0.9rem 1rem;
+    border: 2px solid var(--input-borda);
     border-radius: 8px;
     background-color: var(--input-bg);
     color: var(--input-texto);
     transition: all 0.3s ease;
+    font-size: 1rem;
+    letter-spacing: 0.3px; /* Melhor espaçamento para legibilidade */
+    font-weight: 500; /* Texto um pouco mais grosso para melhor visibilidade */
 }
 
 .form-control:focus {
     border-color: var(--destaque);
-    box-shadow: 0 0 0 0.2rem rgba(var(--destaque-rgb), 0.2);
+    box-shadow: 0 0 0 3px rgba(var(--destaque-rgb), 0.25);
     background-color: var(--input-bg-focus);
+    color: var(--input-texto); /* Garantir que a cor do texto se mantenha */
 }
 
 .form-control::placeholder {
-    color: var(--texto-secundario);
-    opacity: 0.6;
+    color: var(--input-placeholder);
+    opacity: 0.8;
 }
 
-.form-label {
-    color: var(--texto);
-    margin-bottom: 0.5rem;
+/* Destaca o campo ativo com uma borda mais visível */
+.form-control:focus-within {
+    border-color: var(--destaque);
+    border-width: 2px;
+}
+
+/* Melhorar legibilidade do texto no textarea */
+textarea.form-control {
+    line-height: 1.6;
+}
+
+/* Garante contraste adequado nos estados de erro do formulário */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--input-texto);
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--input-texto);
 }
 
 .error-message {
-    color: #dc3545;
-    font-size: 0.85rem;
+    color: #FF5252; /* Vermelho com bom contraste */
+    font-size: 0.9rem;
     margin-top: 0.25rem;
+    font-weight: 500;
 }
 
 /* Footer
@@ -800,6 +921,7 @@ section {
 }
 
 hr {
+    border: 2px solid transparent;
     border-color: var(--borda-footer);
     opacity: 0.2;
     margin: 1.5rem 0;
@@ -826,6 +948,7 @@ hr {
     transform: scale(1.2);
 }
 
+/* Toggle de tema claro/escuro */
 .btn-tema[aria-pressed="true"] {
     border-color: var(--texto);
     transform: scale(1.1);
@@ -935,6 +1058,16 @@ input:checked + .slider:before {
 
 .swal2-title, .swal2-content {
     color: var(--texto) !important;
+}
+
+/* Animações e efeitos - respeitando preferências do usuário */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* Variáveis RGB para uso em rgba() */

@@ -1,0 +1,94 @@
+/**
+ * Estilos específicos para formulários
+ * Autor: Luka Andrade
+ * Data: 2023
+ */
+
+/* Estilos para grupos de formulário */
+.form-group {
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-group-active label {
+    color: var(--destaque);
+}
+
+/* Campo de entrada ativo com destaque */
+.form-control-active {
+    box-shadow: 0 0 0 3px rgba(var(--destaque-rgb), 0.25);
+    border-color: var(--destaque) !important;
+    background-color: var(--input-bg-focus) !important;
+}
+
+/* Estilos aprimorados para labels */
+.form-label {
+    transition: color 0.3s ease;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Efeito visual para indicar campos obrigatórios */
+.form-label.required::after {
+    content: " *";
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+/* Melhorar espaçamento entre elementos */
+.form-control + .error-message {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Estado de carregamento do botão de envio */
+#submit-btn .fa-spinner {
+    margin-right: 0.5rem;
+}
+
+/* Aumentar contraste para mensagens de erro */
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.error-message:not(:empty) {
+    max-height: 50px;
+    opacity: 1;
+    margin-top: 0.5rem;
+}
+
+/* Estados de sucesso do formulário */
+.form-submitted-success .form-control {
+    border-color: #2ecc71;
+}
+
+/* Estilo visual quando o formulário está sendo enviado */
+.form-submitting .form-control {
+    opacity: 0.7;
+}
+
+/* Feedback visual para cada tipo de campo */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(var(--destaque-rgb), 0.05),
+        rgba(var(--destaque-rgb), 0.0)
+    );
+}
+
+textarea:focus {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(var(--destaque-rgb), 0.05),
+        rgba(var(--destaque-rgb), 0.02)
+    );
+}
