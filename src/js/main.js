@@ -1,7 +1,7 @@
 /**
  * Main JavaScript para o portfólio pessoal
- * Autor: Seu Nome
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,8 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Animar barras de progresso quando visíveis
         window.addEventListener('scroll', animateProgressBars);
         
-        // Configurar tema escuro permanente
-        aplicarTema('tema-escuro');
     }
     
     /**
@@ -83,37 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    /**
-     * Anuncia mudanças para leitores de tela
-     * @param {string} mensagem - Mensagem a ser anunciada
-     */
-    function anunciarParaLeitoresDeTelaEscolhaTema(mensagem) {
-        const anuncio = document.createElement('div');
-        anuncio.setAttribute('aria-live', 'polite');
-        anuncio.classList.add('visually-hidden');
-        anuncio.textContent = mensagem;
-        document.body.appendChild(anuncio);
-        
-        setTimeout(() => {
-            document.body.removeChild(anuncio);
-        }, 1000);
-    }
-    
-    /**
-     * Aplica o tema baseado na preferência salva
-     * @param {string} tema - Nome do tema a ser aplicado
-     */
-    function aplicarTema(tema) {
-        // Remover classes de tema existentes
-        document.body.classList.remove('tema-padrao', 'tema-escuro', 'tema-colorido');
-        
-        // Aplicar classe do tema escolhido
-        document.body.classList.add(tema);
 
-        // Anunciar mudança de tema para leitores de tela
-        anunciarParaLeitoresDeTelaEscolhaTema(`Tema ${tema.replace('tema-', '')} aplicado.`);
-    }
-    
     /**
      * Animar barras de progresso quando visíveis
      */

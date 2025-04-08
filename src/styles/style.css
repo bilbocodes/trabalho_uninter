@@ -1,7 +1,7 @@
 /**
  * Estilos principais para o portfólio pessoal
- * Autor: Luka Andrade
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 /* Reset e Estilos Globais
@@ -927,117 +927,6 @@ hr {
     margin: 1.5rem 0;
 }
 
-/* Seletores de tema */
-.tema-seletores {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.btn-tema {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-tema:hover, .btn-tema:focus {
-    transform: scale(1.2);
-}
-
-/* Toggle de tema claro/escuro */
-.btn-tema[aria-pressed="true"] {
-    border-color: var(--texto);
-    transform: scale(1.1);
-}
-
-#tema-padrao {
-    background-color: var(--cor-principal);
-}
-
-#tema-escuro {
-    background-color: #333;
-}
-
-#tema-colorido {
-    background: linear-gradient(135deg, #7b68ee, #9370db);
-}
-
-/* Toggle de tema claro/escuro */
-.theme-toggle-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.toggle-icon {
-    font-size: 0.9rem;
-    color: var(--texto-footer);
-}
-
-.toggle-icon i {
-    vertical-align: middle;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 52px;
-    height: 26px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--bg-secundario);
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--branco);
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: var(--destaque);
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px var(--destaque);
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
 
 /* Animações e efeitos */
 .fade-in {
@@ -1076,12 +965,7 @@ input:checked + .slider:before {
     --destaque-secundario-rgb: 149, 195, 235;
 }
 
-.tema-escuro {
+.tema {
     --destaque-rgb: 92, 148, 197;
     --destaque-secundario-rgb: 78, 124, 166;
-}
-
-.tema-colorido {
-    --destaque-rgb: 123, 104, 238;
-    --destaque-secundario-rgb: 147, 112, 219;
 }

@@ -1,7 +1,7 @@
 /**
  * Validação de formulário para o portfólio pessoal
- * Autor: Seu Nome
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 document.addEventListener('DOMContentLoaded', function() {

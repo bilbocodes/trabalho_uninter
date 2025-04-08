@@ -1,16 +1,10 @@
 /**
  * Esquemas de cores para o portfólio pessoal
- * Autor: Luka Andrade
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 :root {
-    /* Variáveis de cores base com melhor contraste */
-    --cor-principal: #4CAF93; /* Verde vibrante */
-    --cor-secundaria: #FFB74D; /* Laranja suave */
-    --cor-terciaria: #FFD54F; /* Amarelo pastel */
-    --cor-destaque: #FF5722; /* Coral mais intenso para melhor contraste */
-    
     /* Cores neutras */
     --branco: #FFFFFF;
     --preto: #000000;
@@ -19,8 +13,7 @@
     --cinza-escuro: #424242;
 }
 
-/* Tema Escuro com melhor contraste para acessibilidade */
-.tema-escuro {
+.tema {
     /* Cores de fundo com contraste adequado */
     --bg-principal: #121212;
     --bg-secundario: #1E1E1E;

@@ -1,7 +1,7 @@
 /**
  * Funcionalidades de acessibilidade para o portfólio pessoal
- * Autor: Luka Andrade
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 document.addEventListener('DOMContentLoaded', function() {

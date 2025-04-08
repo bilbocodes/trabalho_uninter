@@ -1,7 +1,7 @@
 /**
  * Estilos de acessibilidade para o portfólio pessoal
- * Autor: Luka Andrade
- * Data: 2023
+ * Autor: Luka Andrade - RU: 4473328
+ * Data: 2025
  */
 
 /* Elementos visualmente ocultos, mas acessíveis para leitores de tela */
@@ -155,27 +155,3 @@
     box-shadow: 0 3px 8px rgba(0,0,0,0.3);
 }
 
-/* Suporte para Tema Escuro baseado na preferência do sistema */
-@media (prefers-color-scheme: dark) {
-    .sistema-tema-escuro {
-        --bg-principal: #1a1a1a;
-        --bg-secundario: #252525;
-        --bg-card: #2a2a2a;
-        --bg-nav: rgba(26, 26, 26, 0.95);
-        --bg-nav-scroll: rgba(26, 26, 26, 0.98);
-        --bg-footer: #181818;
-        
-        --texto: #e6e6e6;
-        --texto-secundario: #adb5bd;
-        --titulos: #f8f9fa;
-        --texto-nav: #dee2e6;
-        --texto-footer: #dee2e6;
-        --texto-footer-titulo: #f8f9fa;
-        
-        --borda: #444;
-        --borda-footer: #555;
-        
-        --input-bg: #333;
-        --input-bg-focus: #3a3a3a;
-    }
-}

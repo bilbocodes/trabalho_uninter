@@ -32,30 +32,6 @@ O site é hospedado na plataforma Vercel, garantindo alta disponibilidade e carr
 - **Font Awesome** - Ícones vetoriais
 - **SweetAlert2** - Notificações modernas e acessíveis
 
-## 📂 Estrutura do Projeto
-
-```
-/home/luka/Documentos/trabalho/
-├── index.html                  # Página principal
-├── README.md                   # Documentação do projeto (este arquivo)
-├── src/
-│   ├── styles/
-│   │   ├── cores.css           # Variáveis de cores e temas
-│   │   ├── style.css           # Estilos principais
-│   │   ├── formulario.css      # Estilos específicos para formulários
-│   │   ├── acessibilidade.css  # Estilos para melhorar acessibilidade
-│   │   └── responsividade.css  # Media queries e ajustes responsivos
-│   ├── js/
-│   │   ├── main.js             # Funcionalidades principais
-│   │   ├── formulario.js       # Validação e envio de formulário
-│   │   └── acessibilidade.js   # Recursos de acessibilidade
-│   └── assets/
-│       ├── images/             # Imagens do site
-│       └── icons/              # Ícones e favicon
-└── static/
-    └── svg/                    # Arquivos SVG (ondas, divisores)
-```
-
 ## 🔧 Instalação e Execução
 
 1. Clone o repositório:
