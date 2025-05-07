@@ -87,7 +87,7 @@ Para personalizar este portfólio:
 
 ## 📞 Contato
 
-Luka Andrade - [luka.andrade@gmail.com](mailto:luka.andrade@gmail.com)
+Luka Andrade - [luka.andrade88@gmail.com](mailto:luka.andrade88@gmail.com)
 
 Perfil GitHub: [github.com/bilbocodes](https://github.com/bilbocodes)
 
