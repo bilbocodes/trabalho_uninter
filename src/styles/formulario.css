@@ -21,7 +21,7 @@
     background-color: var(--input-bg-focus) !important;
 }
 
-/* Estilos aprimorados para labels */
+/* Estilos para labels */
 .form-label {
     transition: color 0.3s ease;
     font-weight: 500;
@@ -36,7 +36,7 @@
     font-weight: bold;
 }
 
-/* Melhorar espaçamento entre elementos */
+/*  Espaçamento entre elementos */
 .form-control + .error-message {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -47,7 +47,7 @@
     margin-right: 0.5rem;
 }
 
-/* Aumentar contraste para mensagens de erro */
+/* Contraste para mensagens de erro */
 .error-message {
     color: #ff6b6b;
     font-size: 0.85rem;
@@ -65,7 +65,6 @@
     margin-top: 0.5rem;
 }
 
-/* Estados de sucesso do formulário */
 .form-submitted-success .form-control {
     border-color: #2ecc71;
 }
