@@ -4,8 +4,7 @@
  * Data: 2025
  */
 
-/* Reset e Estilos Globais
--------------------------------------------------- */
+/* Reset e estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
-    font-size: 16px; /* Base para cálculos em rem */
+    font-size: 16px; 
 }
 
 body {
@@ -27,21 +26,21 @@ body {
     overflow-x: hidden;
 }
 
-/* Cabeçalhos com espaçamento melhorado para leitura */
+/* Cabeçalhos com espaçamento */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     color: var(--titulos);
     font-weight: 600;
-    margin-bottom: 1.25rem; /* Mais espaço após títulos */
+    margin-bottom: 1.25rem; 
     line-height: 1.3;
-    letter-spacing: 0.5px; /* Melhor legibilidade */
+    letter-spacing: 0.5px;
 }
 
 p {
-    margin-bottom: 1.25rem; /* Espaçamento entre parágrafos */
+    margin-bottom: 1.25rem; 
     color: var(--texto);
-    font-size: 1.05rem; /* Texto ligeiramente maior para leitura */
-    line-height: 1.7; /* Maior para melhor leitura */
+    font-size: 1.05rem; 
+    line-height: 1.7; 
 }
 
 /* Links mais acessíveis */
@@ -49,12 +48,12 @@ a {
     color: var(--destaque);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
-    font-weight: 500; /* Texto dos links um pouco mais visível */
+    font-weight: 500; 
 }
 
 a:hover, a:focus {
     color: var(--destaque-hover);
-    text-decoration: underline; /* Melhora acessibilidade */
+    text-decoration: underline; 
     transform: scale(1.02);
 }
 
@@ -82,8 +81,7 @@ section {
     background-color: var(--bg-secundario);
 }
 
-/* Estilos da Navegação
--------------------------------------------------- */
+/* Estilos da nav */
 .navbar {
     background-color: var(--bg-nav);
     transition: all 0.3s ease;
@@ -145,8 +143,8 @@ section {
     outline: none;
 }
 
-/* Seção Hero
--------------------------------------------------- */
+/* Seção Hero */
+
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -271,7 +269,7 @@ section {
 
 /* Botões com maior acessibilidade */
 .btn {
-    padding: 0.9rem 1.5rem; /* Botões maiores são mais acessíveis */
+    padding: 0.9rem 1.5rem; 
     font-weight: 600;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -279,7 +277,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    letter-spacing: 0.5px; /* Melhor legibilidade */
+    letter-spacing: 0.5px; 
     text-align: center;
 }
 
@@ -518,14 +516,12 @@ section {
     z-index: 1;
 }
 
-/* Seção Sobre
--------------------------------------------------- */
+/* Seção sobre */
 .section-title {
     position: relative;
     margin-bottom: 2.5rem;
 }
 
-/* Ajuste na seção de títulos para melhor visibilidade */
 .section-title h2 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -564,7 +560,7 @@ section {
 }
 
 .about-content {
-    text-align: left; /* Alinhamento à esquerda */
+    text-align: left; 
 }
 
 .about-content h3 {
@@ -577,7 +573,7 @@ section {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0; /* Alinhado à esquerda */
+    left: 0; 
     width: 50px;
     height: 3px;
     background-color: var(--destaque);
@@ -596,7 +592,7 @@ section {
     margin-top: 2rem !important;
 }
 
-/* Ajuste em móveis para o botão centralizado */
+/* Ajuste em celulares para o botão centralizado */
 @media (max-width: 768px) {
     .about-content .mt-4 .btn {
         width: 100%;
@@ -623,15 +619,14 @@ section {
     margin-bottom: 0;
 }
 
-/* Seção Projetos
--------------------------------------------------- */
+/* Seção projetos */
+
 .projeto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* Seção de projetos com melhor visualização */
 .projeto-card {
     background-color: var(--bg-card);
     border-radius: 15px;
@@ -702,7 +697,6 @@ section {
     justify-content: space-between;
 }
 
-/* Ajustes para os botões de projeto */
 .btn-outline-primario {
     color: var(--destaque);
     border: 2px solid var(--destaque);
@@ -731,8 +725,8 @@ section {
     transform: translateY(-2px);
 }
 
-/* Seção Habilidades
--------------------------------------------------- */
+/* Seção Hhabilidades */
+
 .habilidade-item {
     margin-bottom: 1.5rem;
 }
@@ -743,13 +737,12 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Melhorias para barras de progresso */
 .progress {
-    height: 12px; /* Barras mais altas para melhor visibilidade */
+    height: 12px; 
     border-radius: 6px;
     background-color: var(--progress-bar-bg);
     overflow: hidden;
-    margin-bottom: 1.25rem; /* Mais espaço entre barras */
+    margin-bottom: 1.25rem; 
 }
 
 .progress-bar {
@@ -780,8 +773,8 @@ section {
     100% { background-position: -200% 0; }
 }
 
-/* Seção Contato
--------------------------------------------------- */
+/* Seção contato */
+
 .contato-info {
     padding: 2rem;
     background-color: var(--bg-card);
@@ -842,7 +835,7 @@ section {
     transform: translateY(-3px);
 }
 
-/* Formulários mais acessíveis e com melhor contraste */
+/* Formulário */
 .contato-form {
     padding: 2rem;
     background-color: var(--bg-card);
@@ -858,15 +851,15 @@ section {
     color: var(--input-texto);
     transition: all 0.3s ease;
     font-size: 1rem;
-    letter-spacing: 0.3px; /* Melhor espaçamento para legibilidade */
-    font-weight: 500; /* Texto um pouco mais grosso para melhor visibilidade */
+    letter-spacing: 0.3px; 
+    font-weight: 500; 
 }
 
 .form-control:focus {
     border-color: var(--destaque);
     box-shadow: 0 0 0 3px rgba(var(--destaque-rgb), 0.25);
     background-color: var(--input-bg-focus);
-    color: var(--input-texto); /* Garantir que a cor do texto se mantenha */
+    color: var(--input-texto); 
 }
 
 .form-control::placeholder {
@@ -899,14 +892,14 @@ textarea.form-control {
 }
 
 .error-message {
-    color: #FF5252; /* Vermelho com bom contraste */
+    color: #FF5252;
     font-size: 0.9rem;
     margin-top: 0.25rem;
     font-weight: 500;
 }
 
-/* Footer
--------------------------------------------------- */
+/* Footer */
+
 .footer {
     background-color: var(--bg-footer);
     padding: 2rem 0 1rem;
@@ -949,7 +942,7 @@ hr {
     color: var(--texto) !important;
 }
 
-/* Animações e efeitos - respeitando preferências do usuário */
+/* Animações e efeitos */
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
         animation-duration: 0.01ms !important;
