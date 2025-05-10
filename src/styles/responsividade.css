@@ -4,7 +4,7 @@
  * Data: 2025
  */
 
-/* Mobile Primeiro (base) */
+/* Mobile */
 @media (max-width: 575.98px) {
     .section-padding {
         padding: 3rem 0;
@@ -49,7 +49,7 @@
     }
 }
 
-/* Extra small devices (portrait phones) */
+/* Extra small devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .section-padding {
         padding: 4rem 0;
@@ -77,7 +77,7 @@
     }
 }
 
-/* Small devices (landscape phones) */
+/* Small devices */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .section-padding {
         padding: 5rem 0;
@@ -162,42 +162,3 @@
     }
 }
 
-/* Ajustes para impressão */
-@media print {
-    .navbar, 
-    .footer,
-    .hero-buttons,
-    .social-icons,
-    .scroll-indicator,
-    .projeto-links {
-        display: none !important;
-    }
-    
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-    
-    @page {
-        margin: 1.5cm;
-    }
-    
-    .container {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    
-    .section-padding {
-        padding: 1rem 0 !important;
-    }
-    
-    .contato-form {
-        display: none !important;
-    }
-    
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-}
