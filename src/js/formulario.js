@@ -222,7 +222,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /**
      * Simula o envio do formulário (para fins de demonstração)
-     * Em um caso real, isso seria substituído pelo envio AJAX para o backend
      */
     function simulateFormSubmission() {
         // Simular tempo de processamento
