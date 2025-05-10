@@ -18,20 +18,20 @@
     --bg-principal: #121212;
     --bg-secundario: #1E1E1E;
     --bg-card: #2C2C2C;
-    --bg-nav: rgba(18, 18, 18, 0.97); /* Mais opaco para melhor leitura */
+    --bg-nav: rgba(18, 18, 18, 0.97); 
     --bg-nav-scroll: rgba(18, 18, 18, 0.98);
     --bg-footer: #1A1A1A;
     
     /* Cores de texto com alto contraste */
-    --texto: #F0F0F0; /* Mais claro para melhor contraste */
-    --texto-secundario: #BDBDBD; /* Mais claro que antes */
-    --titulos: #FFFFFF; /* Branco puro para melhor leitura */
+    --texto: #F0F0F0; 
+    --texto-secundario: #BDBDBD; 
+    --titulos: #FFFFFF; 
     --texto-nav: #F0F0F0;
     --texto-footer: #D0D0D0;
     --texto-footer-titulo: #FFFFFF;
     
-    /* Cores de destaque com contraste adequado (4.5:1 ou superior) */
-    --destaque: #FF5722; /* Coral intenso - testado para acessibilidade */
+    /* Cores de destaque com contraste adequado  */
+    --destaque: #FF5722; 
     --destaque-hover: #FF7043;
     --destaque-secundario: #FF8A65;
     
@@ -47,12 +47,12 @@
     --borda-footer: #333;
     --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.3);
     
-    /* Inputs com melhor contraste - corrigido para maior legibilidade */
-    --input-bg: #333333; /* Fundo mais escuro que o card */
-    --input-bg-focus: #3D3D3D; /* Mais claro quando em foco */
+    /* Inputs com contraste */
+    --input-bg: #333333; 
+    --input-bg-focus: #3D3D3D; 
     --input-borda: #555;
-    --input-texto: #FFFFFF; /* Branco puro para máximo contraste */
-    --input-placeholder: #999999; /* Placeholder mais visível que antes */
+    --input-texto: #FFFFFF; 
+    --input-placeholder: #999999;
     
     /* Elementos específicos */
     --progress-bar-bg: #333;
