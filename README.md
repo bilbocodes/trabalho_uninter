@@ -1,4 +1,4 @@
-# Portfólio Profissional - Luka Andrade
+# Portfólio profissional - Luka Andrade
 
 ![Versão](https://img.shields.io/badge/version-1.0.0-green) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
@@ -6,7 +6,7 @@
 
 Este é um site de portfólio profissional desenvolvido com HTML5, CSS3 e JavaScript, focado em acessibilidade e design responsivo. O projeto foi construído para apresentar minhas habilidades como desenvolvedor front-end, projetos e informações de contato.
 
-## 🔗 Acesso Online
+## 🔗 Acesso online
 
 O projeto está disponível online e pode ser acessado através do seguinte link:
 
@@ -23,7 +23,7 @@ O site é hospedado na plataforma Vercel, garantindo alta disponibilidade e carr
 - **Formulário de Contato Interativo**: Com validação em tempo real
 - **Performance Otimizada**: Carregamento rápido e eficiente
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias utilizadas
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Estilização com variáveis CSS para temas
@@ -32,7 +32,7 @@ O site é hospedado na plataforma Vercel, garantindo alta disponibilidade e carr
 - **Font Awesome** - Ícones vetoriais
 - **SweetAlert2** - Notificações modernas e acessíveis
 
-## 🔧 Instalação e Execução
+## 🔧 Instalação e execução
 
 1. Clone o repositório:
    ```bash
@@ -48,7 +48,7 @@ O site é hospedado na plataforma Vercel, garantindo alta disponibilidade e carr
 
 3. Para desenvolvimento, recomendo utilizar o Live Server no VS Code ou outro servidor de desenvolvimento local.
 
-## 🌟 Recursos de Acessibilidade
+## 🌟 Recursos de acessibilidade
 
 O projeto foi desenvolvido com foco em acessibilidade:
 
@@ -68,15 +68,6 @@ Para personalizar este portfólio:
 3. Adicione seus próprios projetos na seção "Projetos"
 4. Atualize as informações de contato
 5. Substitua os ícones e imagens conforme necessário
-
-## 📝 Recursos Futuros
-
-- [ ] Integração com backend para envio real do formulário
-- [ ] Galeria de projetos expandida com filtros
-- [ ] Blog integrado para artigos técnicos
-- [ ] Modo de tema claro/escuro com toggle
-- [ ] Mais opções de acessibilidade
-- [ ] Multi-idioma (PT-BR/EN)
 
 ## 🤝 Créditos
 
